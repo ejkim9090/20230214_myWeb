@@ -8,6 +8,7 @@
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 <body>
+<h1> 서버프로그램 구현 실습 </h1>
 	<jsp:include page="/WEB-INF/view/header.jsp"/>
 	
 	<script>
