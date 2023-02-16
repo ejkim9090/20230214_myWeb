@@ -29,13 +29,15 @@ public class MyInfoController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//1
-		//2 나의 id에 해당하는 정보를 db에서 읽어오기
 		String id = null;
 		if(request.getSession().getAttribute("lgnss") != null) {
 			id = ((MemberVo)(request.getSession().getAttribute("lgnss"))).getId();
 		}
+		//2 나의 id에 해당하는 정보를 db에서 읽어오기
 		if(id != null) {
 			request.setAttribute("myinfo", new MemberService().myInfo(id));
+		} else {
+			
 		}
 		
 		request.getRequestDispatcher("/WEB-INF/view/member/myinfo.jsp").forward(request, response);
