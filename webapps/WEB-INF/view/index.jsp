@@ -32,6 +32,7 @@
 	}
 	function handlerClickBtnLogout(){
 		console.log("btnLogout 눌림");
+		location.href="<%=request.getContextPath()%>/logout";
 	}
 
 	</script>
