@@ -25,7 +25,8 @@ public class HomeController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 
+		//2. DB
+		request.setAttribute("boardlist", "TODO값");
 		request.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(request, response);
 	}
 
