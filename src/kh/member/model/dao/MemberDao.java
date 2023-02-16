@@ -13,6 +13,10 @@ public class MemberDao {
 		MemberVo result = null;
 		String sql = "select ID, NAME, EMAIL from test_member ";
 		sql += " where id=?";
+//
+//		String sql = "sele@ct ID, NAME, EMAIL from test_member";
+//		sql += "where id=? and PASSWD=?";
+		
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		try {
