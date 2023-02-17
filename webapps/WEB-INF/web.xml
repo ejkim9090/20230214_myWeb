@@ -10,6 +10,8 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  
+  
   <filter>
   	<filter-name>EncodingFilter</filter-name>
   	<filter-class>kh.common.filter.EncodingFilter</filter-class>

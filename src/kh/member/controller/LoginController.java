@@ -40,7 +40,7 @@ public class LoginController extends HttpServlet {
 		vo.setPasswd(request.getParameter("passwd"));
 //		String id = request.getParameter("id");
 //		String passwd = request.getParameter("passwd");
-		
+		System.out.println(vo);
 		//2. DB다녀오기
 		MemberVo result = new MemberService().login(vo);
 		if(result != null) {
