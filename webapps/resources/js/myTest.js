@@ -1,1 +1,1 @@
-alert("aaa");
+alert("한글");

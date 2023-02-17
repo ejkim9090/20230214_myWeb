@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1> 서버프로그램 구현 실습 </h1>
+	<img scr="<%=request.getContextPath()%>/resources/imgaes/1607412378456l0.jpg">
 	<jsp:include page="/WEB-INF/view/header.jsp"/>
 	
 	<c:if test="${not empty lgnss }">
@@ -16,7 +17,6 @@
 	</c:if>
 	
 	<jsp:include page="/WEB-INF/view/board/boardlist.jsp"/>
-	
 	
 	
 	
@@ -40,7 +40,7 @@
 
 	</script>
 	
-<script src="./resources/js/myTest.js" type="text/javascript"></script>
+<!-- <script src="./resources/js/myTest.js" type="text/javascript"></script> -->
 </body>
 </html>
 
