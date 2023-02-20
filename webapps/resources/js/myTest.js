@@ -1,1 +1,3 @@
-alert("한글");
+function f1(){
+	alert("한글");
+}
